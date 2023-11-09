@@ -1,4 +1,4 @@
-#Trilha Explorer
+# Trilha Explorer
 
 Repositório criado para os projetos do cruso Explorer realizado pela Rocketseat. 
 
