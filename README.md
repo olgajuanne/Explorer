@@ -1,6 +1,6 @@
 # Trilha Explorer
 
-Repositório criado para os projetos do cruso Explorer realizado pela Rocketseat. 
+Repositório criado para os projetos do curso Explorer realizado pela Rocketseat. 
 
 ## Contribuindo
 
