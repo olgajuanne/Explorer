@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+body, p, button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+  background-color: #FFFF;
+  /* box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);  */
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  text-align: center;
+  width: 42.8rem;
+}
+
+button {
+  background-color: #FFFF;
+  border: none;
+  padding: 1.6rem;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/* screen1 */
+
+#btnTry img:hover {
+  animation: shakeCookie 2s;
+}
+
+@keyframes shakeCookie {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+
+/* screen2 */
+
+blockquote {
+  background-color: #E4EDF1;
+  padding: 1rem;
+  margin-top: 1.7rem;
+  
+  animation: luck 2s ease-out forwards;
+}
+
+#frase {
+  font-family: 'Dancing Script', cursive;
+}
+
+#btnReset {
+  background-color: #FF9500;
+  color: #FFFF;
+  font-weight: bold;
+  border-radius: .4rem ;
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+#btnReset:hover {
+  background-color: #FF9500;
+}
+
+@keyframes luck {
+  0% {
+		opacity: 0;
+    transform: translateY(100px) scale(0.2);
+	}
+
+	100% {
+		opacity: 1;
+    transform: translateY(0) scale(1);
+	}
+}
